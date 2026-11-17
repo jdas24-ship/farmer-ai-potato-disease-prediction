@@ -74,6 +74,5 @@ Run frontend/index.html using VS Code Live Server.
 
 Development and testing in progress.
 
-## Author
-
-Jivan Das
+**Jivan Das**
+GitHub: [@jdas24-ship](https://github.com/jdas24-ship)
