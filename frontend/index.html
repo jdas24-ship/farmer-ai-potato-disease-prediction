@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer AI |PotatoGuard Disease Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🌿 FarmerAI </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#tips">Tips</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">AI POWERED AGRICULTURE</p>
+            <h1>Potato Disease <span>Prediction</span></h1>
+            <p>Upload a potato leaf image and detect diseases
+               using Artificial Intelligence.</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <!-- Upload Section -->
+        <section class="card upload-card">
+            <h2>📤 Upload Leaf Image</h2>
+            <p class="subtitle">Choose a potato leaf image (JPG, PNG)</p>
+
+            <div class="upload-area" id="dropArea">
+                <div class="upload-icon">📁</div>
+                <h3>Drag & Drop Your Image</h3>
+                <p>or</p>
+                <label for="imageInput" class="upload-btn">
+                    Choose Image
+                </label>
+                <input type="file" id="imageInput"
+                       accept="image/png,image/jpeg,image/webp"
+                       hidden>
+            </div>
+
+            <div class="preview-container" id="previewContainer">
+                <img id="previewImage" src="" alt="Leaf Preview">
+                <button id="removeBtn" class="remove-btn"
+                        type="button">✕</button>
+            </div>
+
+            <button id="predictBtn" class="predict-btn" disabled>
+                🔍 Predict Disease
+            </button>
+
+            <p id="statusMessage" class="status-message"
+               aria-live="polite"></p>
+        </section>
+
+        <!-- Result Section -->
+        <section class="card result-card">
+            <h2>📊 Prediction Result</h2>
+
+            <div class="result-box" id="resultBox">
+                <div class="result-icon">🌱</div>
+                <h2>Ready for Prediction</h2>
+                <p>Upload a potato leaf image to get started.</p>
+
+                <div class="result-details">
+                    <p><strong>Disease:</strong> --</p>
+                    <p><strong>Confidence:</strong> --</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Features -->
+    <form><section class="features" id="about">
+        <div class="feature">
+            <h3>🛡️ Early Detection</h3>
+            <p>Identify diseases at an early stage.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🌱 Healthy Crops</h3>
+            <p>Improve crop health and productivity.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🚜 Smart Farming</h3>
+            <p>Use AI for modern agriculture.</p>
+        </div>
+
+        <div class="feature" id="tips">
+            <h3>🌍 Food Security</h3>
+            <p>Support a healthier future.</p>
+        </div>
+    </section></form>
+
+    <footer>
+        <p>© 2026 PotatoGuard | AI Potato Disease Prediction</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
