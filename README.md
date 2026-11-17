@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # Farmer AI - Potato Disease Prediction
 
@@ -78,7 +77,3 @@ Development and testing in progress.
 ## Author
 
 Jivan Das
-=======
-# farmer-ai-potato-disease-prediction
-CNN-based Potato Disease Prediction Web Application
->>>>>>> b225271a3e70d9bf6fbd5b8bfb02d60683600dee
